@@ -15,6 +15,12 @@ namespace ContosoU.Controllers
             return View();
         }
 
+        // Demo: adding the about http get method
+        public IActionResult About()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

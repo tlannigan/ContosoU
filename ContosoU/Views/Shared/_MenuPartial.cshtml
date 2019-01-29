@@ -1,0 +1,15 @@
+﻿
+@* Students dropdown menu *@
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fas fa-user-graduate"></i>&nbsp;Students
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" asp-controller="Student" asp-action="Index"><i class="fas fa-user"></i> Students</a>
+        <a class="dropdown-item" href="#"><i class="fas fa-journal-whills"></i> Courses</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#"><i class="fas fa-chalkboard-teacher"></i> Instructors</a>
+        <a class="dropdown-item" href="#"><i class="fas fa-school"></i> Departments</a>
+    </div>
+</li>

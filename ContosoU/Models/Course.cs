@@ -13,7 +13,7 @@ namespace ContosoU.Models
         // None: Database does not generate a value
 
         // User will have to enter the CourseID manually
-        [DatabaseGenerated(DatabaseGeneratedOption.None)] 
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         [Display(Name = "Course Number")]
         public int CourseID { get; set; } // PK due to the naming convention
 
@@ -35,5 +35,9 @@ namespace ContosoU.Models
         // Navigation Properties
         // 1 course to many enrollments
         public virtual ICollection<Enrollment> Enrollments { get; set; }
+
+        // A course can only belong at most to one department, so the Department
+        // property holds a single Department Entity which may be null if none is assigned)
+        public virtual Department Department { get; set; }
     }
 }
